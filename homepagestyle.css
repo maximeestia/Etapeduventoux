@@ -1,5 +1,14 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
 .header {
-    position: absolute;
+    position: inherit;
     text-align: center;
     top: 0;
     left: 0;
@@ -19,7 +28,7 @@
 body {
     margin: 0;
     font-family: Montserrat, sans-serif;
-    line-height: 1.3;
+    line-height: 1;
     background-color: #f2f4fb;
 }
 
@@ -34,13 +43,10 @@ body {
 .header {
     padding: .5em 0;
     color: #fff;
-    background-color: rgb(167, 26, 26);
+    background-color: rgb(20, 19, 19);
 }
 
--
-/* ewrfvwv */
-
-*,
+- *,
 *:before,
 *:after {
     -moz-box-sizing: border-box;
@@ -65,7 +71,7 @@ a {
 }
 
 #header {
-    background: #272727;
+    background: #fffdfd;
     width: 100%;
     position: inherit;
 }
@@ -74,11 +80,6 @@ a {
     content: "";
     clear: both;
     display: inline-flexbox;
-}
-
-.search {
-    float: right;
-    padding: 30px;
 }
 
 input {
@@ -117,7 +118,7 @@ nav .dropdown {
 }
 
 nav li a {
-    float: left;
+    float: right;
     padding: 35px;
 }
 
@@ -290,6 +291,15 @@ nav li li a:hover {
 
 .bg-grey {
     background: #292929;
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.2s ease-in-out left;
+    -moz-transition: 0.2s ease-in-out left;
+    -o-transition: 0.2s ease-in-out left;
+    transition: 0.2s ease-in-out left;
 }
 
 .logo-footer {
