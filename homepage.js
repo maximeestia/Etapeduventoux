@@ -12,3 +12,12 @@ $("#menu-icon").on("click", function() {
     $("nav").slideToggle();
     $(this).toggleClass("active");
 });
+
+
+
+
+// jQuery code
+// Prevent closing from click inside dropdown
+$(document).on('click', '.dropdown-menu', function(e) {
+    e.stopPropagation();
+});
